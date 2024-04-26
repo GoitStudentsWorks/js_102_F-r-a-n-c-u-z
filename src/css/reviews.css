@@ -1,0 +1,56 @@
+.hidden {
+  display: none;
+}
+.reviews-tittle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.9;
+  letter-spacing: -0.02em;
+  color: #fafafa66;
+  margin-left: 16px;
+  margin-bottom: 32px;
+}
+
+.cards-list {
+}
+
+.cards-item {
+  max-width: 344px;
+  height: 302px;
+  padding: 32px 24px 32px 24px;
+  border-radius: 20px;
+  border: 1px solid #fafafa33;
+  margin-left: 16px;
+}
+
+.info {
+  padding-top: 32px;
+}
+
+.name {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.text {
+  color: #fafafa99;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding-top: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  margin-left: 114px;
+}
+.circle-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 60px;
+  border: 1px solid #fafafa33;
+  background-color: transparent;
+}
