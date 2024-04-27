@@ -1,0 +1,12 @@
+.work-form-email:valid {
+    border-color: green;
+}
+.work-form-email:invalid {
+    border-color: red;
+}
+
+.work-form-comments {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
