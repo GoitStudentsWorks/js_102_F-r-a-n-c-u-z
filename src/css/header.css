@@ -5,11 +5,13 @@
 .open-menu-icon {
   stroke: #fafafa;
 } */
-.header-section {
+.header-section{
   background-color: transparent;
   position: absolute;
-  width: 100%;
+      width: 100%;
 }
+
+
 .logo-box {
   display: flex;
   flex-direction: row;
@@ -78,6 +80,20 @@
 .menu,
 .order-project-link {
   display: none;
+}
+
+.visually-hidden-menu {
+  overflow: hidden;
+
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+
+}
+
+.visually-visible-menu {
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+
 }
 
 @media only screen and (min-width: 768px) {
