@@ -5,7 +5,11 @@
 .open-menu-icon {
   stroke: #fafafa;
 } */
-
+.header-section {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+}
 .logo-box {
   display: flex;
   flex-direction: row;
@@ -54,6 +58,21 @@
   .open-mobile-menu {
     display: none;
   }
+}
+
+
+.visually-hidden-menu {
+  overflow: hidden;
+
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+
+}
+
+.visually-visible-menu {
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+
 }
 
 .menu,
