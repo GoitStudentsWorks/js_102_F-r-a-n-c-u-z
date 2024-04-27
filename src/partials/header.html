@@ -3,24 +3,36 @@
     <nav class="header-nav">
       <div class="logo-menu-box">
         <div class="logo-box">
-          <img
-            srcset=""
-            class="logo-photo"
-            src=""
-            alt="logo-photo"
-            width="80"
-            height="80"
-          />
-          <a class="header-logo" href="#home">
-            <svg class="header-icon" width="84" height="19">
-              <use href="#logo"></use>
-            </svg>
-          </a>
+          <picture>
+            <source
+              type="image/png"
+              srcset="
+                ./img/hero/image@1x_result.png 1x,
+                ./img/hero/image@2x_result.png 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./img/hero/image@1x_result_result.png 1x,
+                ./img/hero/image@2x_result_result.png 2x
+              "
+            />
+            <img
+              src="./img/hero/image@1x_result.png"
+              alt="man"
+              width="80"
+              height="80"
+            />
+          </picture>
+          <svg class="jefferson" width="84" height="19">
+            <use href="./img/icons/icon.svg#jefferson_"></use>
+          </svg>
         </div>
 
         <button type="button" class="open-mobile-menu" aria-label="Open">
-          <svg class="open-menu-icon" width="28" height="28">
-            <use href="#mobile-menu"></use>
+          <svg class="open-menu-icon" width="24" height="12">
+            <use href="./img/icons/icon.svg#mobile-menu"></use>
           </svg>
         </button>
       </div>
@@ -28,7 +40,7 @@
       <div class="menu">
         <p class="menu-title">Menu</p>
 
-        <ul class="menu-list visually-hidden">
+        <ul class="menu-list visually-hidden-menu">
           <li class="menu-list-item">
             <a href="#about-me">About me</a>
           </li>
@@ -56,7 +68,7 @@
 <div class="mobile-menu">
   <button type="button" class="close-menu menu-close" aria-label="Close">
     <svg class="close-menu-icon" width="28" height="28">
-      <use href="#close-menu"></use>
+      <use href="./img/icons/icon.svg#x"></use>
     </svg>
   </button>
 

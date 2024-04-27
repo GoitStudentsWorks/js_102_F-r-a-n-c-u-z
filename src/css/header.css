@@ -1,32 +1,44 @@
-/* .header-icon {
-  fill: #fafafa;
+
+.header-section{
+  background-color: transparent;
+  position: absolute;
+      width: 100%;
 }
 
-.open-menu-icon {
-  stroke: #fafafa;
-} */
-
 .logo-box {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   gap: 8px;
+  width: 172px;
+    height: 80px;
 }
 
 .logo-menu-box {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  flex-shrink: 0;
-}
 
-.open-mobile-menu {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .header-nav {
-  position: relative;
-}
+   position: relative;
+
+ }
+
+.header-container {
+   max-width: none;
+   margin: 0;
+ }
+
+.header-nav {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+ }
+
+.menu,
+.order-project-link {
+   display: none;
+ }
 
 @media only screen and (min-width: 768px) {
   .header-nav {
@@ -40,10 +52,27 @@
   }
 }
 
-.menu,
-.order-project-link {
-  display: none;
-}
+.visually-hidden-menu {
+  overflow: hidden;
+
+   transition: opacity 300ms ease-in-out;
+   opacity: 0;
+
+ }
+
+.visually-visible-menu {
+   transition: opacity 300ms ease-in-out;
+   opacity: 1;
+
+ }
+
+.open-mobile-menu {
+  position: absolute;
+  right: 16px;
+  top: 32px;
+  background-color: transparent;
+  border: transparent;
+} 
 
 @media only screen and (min-width: 768px) {
   .menu {
@@ -99,7 +128,11 @@
   }
 }
 
+
 /* Mobile menu */
+
+
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -107,9 +140,9 @@
   width: 100%;
   height: 100%;
 
-  background-color: #1c1d20;
-  background-image: url();
-  background-repeat: no-repeat;
+  
+  background-image: url("modal-window/Glass-effect-1_1x.webp");
+ background-repeat: no-repeat;
   background-size: cover;
 
   display: flex;
@@ -127,21 +160,28 @@
   visibility: visible;
 }
 
+.close-menu {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  border: transparent;
+  background-color: transparent;
+}
+
+.close-menu-icon {
+  stroke: #fafafa;
+ 
+}
+
+
+
 @media (min-resolution: 192dpi) {
   .mobile-menu {
     background-image: url();
   }
 }
 
-.close-menu-icon {
-  stroke: #fafafa;
-}
 
-.close-menu {
-  position: absolute;
-  top: 32px;
-  right: 16px;
-}
 
 .mobile-menu-list {
   display: flex;
