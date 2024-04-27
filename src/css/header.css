@@ -7,25 +7,41 @@
 } */
 
 .logo-box {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   gap: 8px;
+  width: 172px;
+    height: 80px;
 }
 
 .logo-menu-box {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  flex-shrink: 0;
+
 }
 
 .open-mobile-menu {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 16px;
+  top: 32px;
+  background-color: transparent;
+  border: transparent;
+  
+} */
+
+ .header-nav {
+  position: relative;
+  
 }
 
+.header-container{
+ max-width: none;
+  margin: 0;
+}
 .header-nav {
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
