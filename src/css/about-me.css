@@ -154,13 +154,11 @@ hr {
   line-height: 24px;
   letter-spacing: -0.32px;
 }
+
 .about-skills {
   display: flex;
   margin-top: 96px;
   justify-content: center;
-}
-.about-skills-list {
-  display: flex;
 }
 .about-skills-list-div {
   border-radius: 100px;
@@ -175,7 +173,160 @@ hr {
   font-weight: 500;
   letter-spacing: -0.4px;
 }
-.about-skills-list-svg {
+.about-skills-list {
+  display: flex;
+}
+
+.swiper {
+  stroke: #3b3b3b;
   margin-top: 72px;
   margin-left: 72px;
+}
+
+@media (max-width: 376px) {
+  hr {
+    width: 336px;
+    margin-top: 22px;
+    margin-left: -2px;
+  }
+
+  .about {
+    margin-top: 4px;
+  }
+
+  .about-conteiner {
+    display: block;
+  }
+
+  .about-conteiner-fortext {
+    width: 333px;
+    margin-right: 16px;
+  }
+  .about-conteiner-text {
+    font-size: 21px;
+    width: 262px;
+    padding-top: 34px;
+    padding-bottom: 300px;
+    margin-top: 0px;
+    margin-left: 34px;
+  }
+
+  .about-conteiner-img img {
+    width: 333px;
+    height: 380px;
+    margin-right: 20px;
+  }
+
+  .about-con {
+    display: block;
+  }
+
+  .about-con-list-iteam-sec {
+    width: 295px;
+    margin-top: 26px;
+    margin-bottom: 7px;
+    margin-left: 32px;
+  }
+
+  .about-con-list-iteam-pos {
+    width: 295px;
+    margin-top: 25px;
+    margin-left: 32px;
+  }
+
+  .about-con-list-iteam-sec-icon {
+    display: flex;
+    padding: 7px;
+  }
+
+  .about-con-list-iteam-id {
+    width: 365px;
+    margin-left: 28px;
+  }
+
+  .about-con-list-iteam-title {
+    font-size: 12px;
+    margin-left: -24px;
+  }
+
+  .arrow-up {
+    width: 9px;
+    height: 9px;
+  }
+
+  .arrow-down {
+    width: 9px;
+    height: 9px;
+  }
+
+  .about-con-list-iteam-text {
+    width: 312px;
+    margin-top: 5px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text1 {
+    width: 312px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text21 {
+    width: 312px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text22 {
+    width: 312px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text23 {
+    width: 312px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text31 {
+    width: 310px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text32 {
+    width: 314px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-con-list-iteam-text33 {
+    width: 315px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .about-skills {
+    display: block;
+    margin-top: 28px;
+    justify-content: center;
+  }
+
+  .about-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-skills-list-div {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+  }
+
+  .about-skills-list-svg {
+    margin-top: 42px;
+    margin-left: 30px;
+  }
 }
