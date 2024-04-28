@@ -40,17 +40,21 @@ arrow.addEventListener('click', () => {
   skills[currentIndex].style.backgroundColor = '#ed3b44';
 });
 
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => {
-    changeBackground(index);
-  });
-});
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-arrow.addEventListener('click', () => {
-  changeBackground((currentIndex + 1) % skills.length);
-});
-
-arrow.addEventListener('contextmenu', event => {
-  event.preventDefault();
-  changeBackground((currentIndex - 1 + skills.length) % skills.length);
+// init Swiper:
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation],
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
