@@ -82,3 +82,8 @@ section {
   font-weight: 600;
   src: url('../fonts/inter-tight-v7-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
