@@ -18,3 +18,65 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.CoverBgContainer {
+    height: 508px;
+    background-image: url(../img/covers/elements-mobile-tablet@1x_result.webp);
+    background-image: url(../img/covers/elements-mobile-tablet@1x_result.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center -70px;
+}
+
+
+.CoversProjectContainer {
+    transform: translate(0, -30%) rotate(16deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+/* lists of projects positions */
+
+
+.CoversProjectList {
+    display: flex;
+    gap: 30px;
+}
+
+
+.CoversImgContainer {
+    width: 282px;
+    height: 166px;
+    overflow: hidden;
+}
+
+.AnimationOn {
+    animation: moveRightLeft 4s ease-in-out infinite;
+}
+
+.CoversImg {
+    object-fit: contain;
+}
+
+/* animation */
+
+
+
+@keyframes moveRightLeft {
+
+    0% {
+        transform: translateX(-18%);
+    }
+
+    50% {
+        transform: translateX(18%);
+    }
+
+    100% {
+        transform: translateX(-18%);
+    }
+}
+
