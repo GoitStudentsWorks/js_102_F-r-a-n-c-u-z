@@ -133,7 +133,11 @@
   width: 100%;
   height: 100%;
 
-  background-image: url('modal-window/Glass-effect-1_1x.webp');
+  background-image: url(../img/modal-window/Glass_effect1@1x.png);
+      height: 100%;
+      will-change: 100%;
+      padding-top: 32px;
+      padding-bottom: 32px;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -145,6 +149,12 @@
   z-index: 6;
   transform: translateX(100%);
   transition: transform 400ms ease-in;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .mobile-menu {
+    background-image: url(../img/modal-window/Glass_effect1@2x.png);
+  }
 }
 
 .is-open {
@@ -164,11 +174,6 @@
   stroke: #fafafa;
 }
 
-@media (min-resolution: 192dpi) {
-  .mobile-menu {
-    background-image: url();
-  }
-}
 
 .mobile-menu-list {
   display: flex;
@@ -187,6 +192,8 @@
   letter-spacing: -0.02em;
   border-bottom: 2px solid #fafafa;
 }
+
+
 
 .order-project-mobm {
   width: 163px;
