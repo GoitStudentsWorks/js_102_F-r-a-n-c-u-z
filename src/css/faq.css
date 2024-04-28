@@ -1,0 +1,190 @@
+
+/* @import 'accordion/src/accordion.css';  */
+
+.faq-section-name {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+    /* padding: 0px 32px; */
+   
+    background: #1c1d20;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq-accord-container{
+background-color: #1c1d20;
+display:flex;
+flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-accord-container {
+           
+            justify-content: space-between;
+                align-items: start;
+        }
+}
+
+@media only screen and (min-width: 1440px) {
+    .faq-accord-container {
+
+         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        
+       
+       
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .faq-div-stroka{
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    }}
+
+.faq-ac {
+    padding-top: 20px;
+    padding-bottom: 20px;
+border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  
+
+}
+.faq-ac-left, .faq-ac-right {
+border-right: none;
+border-left: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-ac {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }}
+
+     @media only screen and (min-width: 1440px) {
+                    .faq-ac {
+                        width: 687px;
+                    max-width: 687px;
+                       
+                    }
+                }
+
+      @media only screen and (min-width: 1440px) {
+        .faq-ac-left
+            {padding-right: 31px;
+                padding-left: 0;
+                border-right: 1px solid rgba(250, 250, 250, 0.2);
+            }}
+
+     @media only screen and (min-width: 1440px) {
+                             .faq-ac-right{ padding-left: 31px;
+                                 border-left: 1px solid rgba(250, 250, 250, 0.2);
+                             }
+                         }
+
+.faq-ac-header {
+    padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-ac-header {
+            padding-bottom: 12px;
+        }}
+
+.faq-ac-trigger{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #1c1d20;
+    border: none;
+    padding: 0;
+    gap: 24px;
+  max-width: 343px;
+  width: 100%;
+  
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-ac-trigger {
+       width: 704px;
+        max-width: 704px;
+       
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .faq-ac-trigger {
+        width: 656px;
+        max-width: 656px;
+       
+    }
+}
+
+
+.faq-item {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        background-color: #1c1d20;
+        text-align: left;
+        /* margin-right: 24px; */
+        /* background: #242527; */
+}
+
+.faq-arrow {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 100px;
+        padding: 7px;
+        width: 34px;
+        height: 34px;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-arrow {
+        padding: 10px;
+        width: 40px;
+            height: 40px;
+    }}
+
+.faq-arrow-down {
+    /* fill: #fafafa; */
+     stroke: #FAFAFA; 
+}
+
+.faq-ac-text {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.6);
+        max-width: 343px;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-ac-text {
+    width: 656px;
+    max-width: 656px;
+   
+        }}
+
+.faq-ac-panel{
+    display:none;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-ac-panel {
+           padding-top: 12px;
+        }}
