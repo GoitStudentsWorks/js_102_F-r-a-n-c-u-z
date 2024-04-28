@@ -1,8 +1,7 @@
-
-.header-section{
+.header-section {
   background-color: transparent;
   position: absolute;
-      width: 100%;
+  width: 100%;
 }
 
 .logo-box {
@@ -10,35 +9,33 @@
   flex-direction: row;
   gap: 8px;
   width: 172px;
-    height: 80px;
+  height: 80px;
 }
 
 .logo-menu-box {
   display: flex;
   align-items: center;
-
 }
 
 .header-nav {
-   position: relative;
-
- }
+  position: relative;
+}
 
 .header-container {
-   max-width: none;
-   margin: 0;
- }
+  max-width: none;
+  margin: 0;
+}
 
 .header-nav {
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
- }
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
 .menu,
 .order-project-link {
-   display: none;
- }
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   .header-nav {
@@ -55,16 +52,14 @@
 .visually-hidden-menu {
   overflow: hidden;
 
-   transition: opacity 300ms ease-in-out;
-   opacity: 0;
-
- }
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+}
 
 .visually-visible-menu {
-   transition: opacity 300ms ease-in-out;
-   opacity: 1;
-
- }
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+}
 
 .open-mobile-menu {
   position: absolute;
@@ -72,7 +67,7 @@
   top: 32px;
   background-color: transparent;
   border: transparent;
-} 
+}
 
 @media only screen and (min-width: 768px) {
   .menu {
@@ -90,6 +85,7 @@
     letter-spacing: -0.02em;
     position: relative;
     border-bottom: 2px solid #fafafa;
+    cursor: pointer;
   }
 
   .menu-list {
@@ -128,10 +124,7 @@
   }
 }
 
-
 /* Mobile menu */
-
-
 
 .mobile-menu {
   position: fixed;
@@ -140,9 +133,8 @@
   width: 100%;
   height: 100%;
 
-  
-  background-image: url("modal-window/Glass-effect-1_1x.webp");
- background-repeat: no-repeat;
+  background-image: url('modal-window/Glass-effect-1_1x.webp');
+  background-repeat: no-repeat;
   background-size: cover;
 
   display: flex;
@@ -170,18 +162,13 @@
 
 .close-menu-icon {
   stroke: #fafafa;
- 
 }
-
-
 
 @media (min-resolution: 192dpi) {
   .mobile-menu {
     background-image: url();
   }
 }
-
-
 
 .mobile-menu-list {
   display: flex;
