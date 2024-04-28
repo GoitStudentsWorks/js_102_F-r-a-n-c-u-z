@@ -1,6 +1,3 @@
-.hidden {
-  display: none;
-}
 .reviews-tittle {
   font-size: 16px;
   font-weight: 600;
@@ -12,22 +9,21 @@
 }
 
 .cards-list {
+  display: flex;
+  gap: 16px;
 }
 
 .cards-item {
-  max-width: 344px;
-  height: 302px;
+  width: 100%;
+  max-width: 332px;
   padding: 32px 24px 32px 24px;
   border-radius: 20px;
   border: 1px solid #fafafa33;
   margin-left: 16px;
 }
 
-.info {
-  padding-top: 32px;
-}
-
 .name {
+  padding-top: 32px;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -43,9 +39,9 @@
 
 .buttons {
   display: flex;
+  justify-content: center;
   gap: 12px;
   margin-top: 32px;
-  margin-left: 114px;
 }
 .circle-button {
   width: 52px;
