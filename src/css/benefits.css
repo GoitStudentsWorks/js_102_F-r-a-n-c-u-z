@@ -107,7 +107,12 @@ color: #FAFAFA;
 .benefits-block{
 
 display: flex;
-flex-wrap: wrap;    
+flex-wrap: wrap; 
+    max-width: 768px;
+    margin-left: auto;
+   
 }
     
 }
+
+
