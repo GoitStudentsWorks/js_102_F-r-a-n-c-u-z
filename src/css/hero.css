@@ -26,6 +26,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
+  background-image: ;
+  /* backdrop-filter: blur(100px); */
+background: linear-gradient(90deg, ),
+url(../img/hero/Rectangle\ 2@1x_result.png);
 }
 
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
