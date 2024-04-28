@@ -1,6 +1,4 @@
 .CoversSection {
-    padding-top: 32px;
-    padding-bottom: 32px;
     background-color: rgb(28, 29, 32);
     overflow: hidden;
 }
@@ -25,10 +23,57 @@
     background-image: url(../img/covers/elements-mobile-tablet@1x_result.png);
     background-repeat: no-repeat;
     overflow: hidden;
-    background-position: center -70px;
+    background-position: center -100px;
 }
 
+@media only screen and (max-width:767px) and (min-resolution:192dpi) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements-mobile-tablet@2x_result.webp);
+        background-image: url(../img/covers/elements-mobile-tablet@2x_result.png);
+    }
+}
 
+@media only screen and (mid-width:768px) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements-mobile-tablet@1x_result.webp);
+        background-image: url(../img/covers/elements-mobile-tablet@1x_result.png);
+    }
+}
+
+@media only screen and (min-width:769px) and (min-resolution:192dpi) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements-mobile-tablet@2x_result.webp);
+        background-image: url(../img/covers/elements-mobile-tablet@2x_result.png);
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements_vectors@1x_result_result.webp);
+        background-image: url(../img/covers/elements_vectors@1x_result.png);
+    }
+}
+
+@media only screen and (min-width:1280px) and (min-resolution:192dpi) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements_vectors@2x_result_result.webp);
+        background-image: url(../img/covers/elements_vectors@2x_result.png);
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements_vectors@1x_result_result.webp);
+        background-image: url(../img/covers/elements_vectors@1x_result.png);
+    }
+}
+
+@media only screen and (min-width:1440px) and (min-resolution:192dpi) {
+    .CoverBgContainer {
+        background-image: url(../img/covers/elements_vectors@2x_result_result.webp);
+        background-image: url(../img/covers/elements_vectors@2x_result.png);
+    }
+}
 .CoversProjectContainer {
     transform: translate(0, -30%) rotate(16deg);
     display: flex;
@@ -52,6 +97,7 @@
     height: 166px;
     overflow: hidden;
 }
+
 
 .AnimationOn {
     animation: moveRightLeft 4s ease-in-out infinite;
@@ -79,4 +125,5 @@
         transform: translateX(-18%);
     }
 }
+
 
