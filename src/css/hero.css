@@ -30,13 +30,13 @@
 
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url();
+    background-image: url(../img/hero/Gradient_mobile_1x.png);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-section {
-    background-image: url();
+    background-image: url(../img/hero/Gradient_mobile_2x.png);
     height: 1024px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -45,13 +45,13 @@
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url();
+    background-image: url(../img/hero/Gradient_tablet_1x.png);
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
-    background-image: url();
+    background-image: url(../img/hero/Gradient_desktop_2x.png);
     padding-bottom: 32px;
     padding-top: 32px;
     height: 900px;
@@ -60,7 +60,7 @@
 
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url();
+    background-image: url(../img/hero/Gradient_desktop_2x.png);
   }
 }
 
