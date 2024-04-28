@@ -102,12 +102,20 @@ color: #FAFAFA;
 }
 }
 
-
 @media only screen and (min-width: 1440px){
 .benefits-block{
 
 display: flex;
-flex-wrap: wrap;    
+flex-wrap: wrap; 
+    max-width: 768px;
+    margin-left: auto;
+   
+}
+.ben-container{
+display: flex;
+flex-direction: row;
 }
     
 }
+
+
