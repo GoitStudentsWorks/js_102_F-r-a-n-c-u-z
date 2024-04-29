@@ -27,34 +27,32 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-const arrow = document.querySelector('.about-skills-list-svg');
-const skills = document.querySelectorAll('.about-skills-list-div');
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
-let currentIndex = 0;
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-skills[currentIndex].style.backgroundColor = '#ed3b44';
-
-// arrow.addEventListener('click', () => {
-//   skills[currentIndex].style.backgroundColor = '';
-//   currentIndex = (currentIndex + 1) % skills.length;
-//   skills[currentIndex].style.backgroundColor = '#ed3b44';
-// });
-
-// // core version + navigation, pagination modules:
-// import Swiper from 'swiper';
-// import { Navigation } from 'swiper/modules';
-// // import Swiper and modules styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-
-// // init Swiper:
-// const swiper = new Swiper('.swiper', {
-//   // configure Swiper to use modules
-//   modules: [Navigation],
-//   direction: 'horizontal',
-//   loop: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+// Ініціалізуємо Swiper для підсвічування
+const swiper = new Swiper('.swiper-container', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    slideChange: function () {
+      // Отримуємо всі слайди
+      const slides = document.querySelectorAll('.about-skills-list-div');
+      // Змінюємо колір фону на початковий для всіх слайдів
+      slides.forEach(slide => {
+        slide.style.backgroundColor = '';
+      });
+      // Отримуємо поточний активний слайд та підсвічуємо його червоним
+      const activeSlide = slides[this.activeIndex];
+      activeSlide.style.backgroundColor = '#ed3b44';
+    },
+  },
+});
