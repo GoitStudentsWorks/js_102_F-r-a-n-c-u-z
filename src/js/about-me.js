@@ -34,27 +34,27 @@ let currentIndex = 0;
 
 skills[currentIndex].style.backgroundColor = '#ed3b44';
 
-arrow.addEventListener('click', () => {
-  skills[currentIndex].style.backgroundColor = '';
-  currentIndex = (currentIndex + 1) % skills.length;
-  skills[currentIndex].style.backgroundColor = '#ed3b44';
-});
+// arrow.addEventListener('click', () => {
+//   skills[currentIndex].style.backgroundColor = '';
+//   currentIndex = (currentIndex + 1) % skills.length;
+//   skills[currentIndex].style.backgroundColor = '#ed3b44';
+// });
 
-// core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+// // core version + navigation, pagination modules:
+// import Swiper from 'swiper';
+// import { Navigation } from 'swiper/modules';
+// // import Swiper and modules styles
+// import 'swiper/css';
+// import 'swiper/css/navigation';
 
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation],
-  direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// // init Swiper:
+// const swiper = new Swiper('.swiper', {
+//   // configure Swiper to use modules
+//   modules: [Navigation],
+//   direction: 'horizontal',
+//   loop: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
