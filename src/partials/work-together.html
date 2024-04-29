@@ -1,29 +1,31 @@
 <section id="work-together" class="section">
   <div class="container">
+  <div class="work-together-title-poz">
+    <picture>
+      <source
+        type="image/png"
+        srcset="
+          ./img/work-together/image@1x_result.png 1x,
+          ./img/work-together/image@2x_result.png 2x
+        "
+      />
+      <source
+        type="image/webp"
+        srcset="
+          ./img/work-together/image@1x_result_result.png 1x,
+          ./img/work-together/image@2x_result_result.png 2x
+        "
+      />
+      <img
+        class="work-together-img"
+        src="./img/work-together/image@1x_result.png"
+        alt="Lloyd Jefferson"
+      />
+    </picture>
     <h2 class="work-together-title">
-      <picture>
-        <source
-          type="image/png"
-          srcset="
-            ./img/work-together/image@1x_result.png 1x,
-            ./img/work-together/image@2x_result.png 2x
-          "
-        />
-        <source
-          type="image/webp"
-          srcset="
-            ./img/work-together/image@1x_result_result.png 1x,
-            ./img/work-together/image@2x_result_result.png 2x
-          "
-        />
-        <img
-          class="work-together-img"
-          src="./img/work-together/image@1x_result.png"
-          alt="Lloyd Jefferson"
-        />
-      </picture>
-      Let’s<span class="work-together-title-accent"> work </span>together
+      <span>Let’s<span class="work-together-title-accent"> work </span></span>together
     </h2>
+  </div>
     <form class="work-form" autocomplete="off">
       <label>
         <input
@@ -46,12 +48,7 @@
         placeholder="comments"
       />
 
-      <button type="submit" class="work-form-btn">
-        <svg class="work-form-btn-ellipse" fill="#ed3b44">
-            <use href="./img/icons/icon.svg#icon-Ellipse-2"></use>
-        </svg>
-        <span class="work-form-btn-text">Send</span>
-     </button>
+    <button type="submit" class="work-form-btn">Send</button>
 
     </form>
     <ul class="work-contacts">
@@ -72,19 +69,5 @@
         >
       </li>
     </ul>
-  </div>
-  <div id="work-modal" class="work-modal">
-    <!-- <button class="work-modal-btn close-work-modal">
-      <svg width="24" height="24">
-        <use href="./img/icons/icon.svg#x"></use>
-      </svg>
-    </button> -->
-      <span id="work-modal-close">
-        <svg width="22" height="22">
-          <use href="./img/icons/icon.svg#x"></use>
-        </svg>
-      </span>
-      <h2 id="work-modal-title"></h2>
-      <p id="work-modal-message"></p>
   </div>
 </section>
