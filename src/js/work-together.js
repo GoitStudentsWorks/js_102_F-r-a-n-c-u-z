@@ -5,11 +5,6 @@ const succesEl = document.querySelector('.work-form-succes');
 const invalidEl = document.querySelector('.work-form-invalid');
 const ellipsEl = document.querySelector('.work-form-btn-ellipse');
 
-const modalEl = document.querySelector('#work-modal');
-const closeEl = document.querySelector('#work-modal-close');
-const modalTitle = document.querySelector('#work-modal-title');
-const modalMessage = document.querySelector('#work-modal-message');
-
 succesEl.style.display = 'none';
 invalidEl.style.display = 'none';
 
@@ -34,40 +29,8 @@ formEl.addEventListener('input', event => {
   }
 });
 
-function openModal(title, message) {
-  modalTitle.innerText = title;
-  modalMessage.innerText = message;
-  modalEl.style.display = "block";
-
-  document.addEventListener("DOMContentLoaded", () => {
-    closeEl.onclick = function() {
-        modalEl.style.display = "none";
-    }
-    window.onclick = function(event) {
-      // console.log(event.target);
-      //   if (event.target === modalEl) {
-            modalEl.style.display = "none";
-        // }
-    }
-  })
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  closeEl.onclick = function() {
-      modalEl.style.display = "none";
-  }
-  window.onclick = function(event) {
-    console.log(event.target);
-    console.log(modalEl);
-      if (event.target === modalEl) {
-          modalEl.style.display = "none";
-      }
-  }
-})
-
 formEl.addEventListener('submit', event => {
   event.preventDefault();
-  ellipsEl.setAttribute('fill', '#e0373f');
   succesEl.style.display = 'none';
   emailEl.style.borderColor = '#1c1d20';
   if (emailEl.value !== '' && commentsEl.value !== '') {
@@ -86,7 +49,7 @@ formEl.addEventListener('submit', event => {
         }
         return response.json();
       })
-      .then(post => openModal(post.title, post.message))
+      .then(post => console.log(post))
       .catch(error => console.log(error));
   
       localStorage.removeItem(localKey);
