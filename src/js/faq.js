@@ -3,12 +3,6 @@
 
 //  new Accordion('.accordion-container');
 
-// const accordions = document.querySelectorAll('.accordion');
-// accordions.forEach(accordion => {
-//   new Accordion(accordion);
-// });
-
-//  const faqAccord = document.querySelectorAll('.faq-accord-container');
 
 
 const accords = document.querySelectorAll('.accordion');
