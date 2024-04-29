@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper-proj', {
   // configure Swiper to use modules
   modules: [Navigation],
   direction: 'horizontal',
