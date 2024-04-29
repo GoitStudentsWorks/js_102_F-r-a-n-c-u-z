@@ -43,10 +43,70 @@
   gap: 12px;
   margin-top: 32px;
 }
+
 .circle-button {
   width: 52px;
   height: 52px;
   border-radius: 60px;
   border: 1px solid #fafafa33;
   background-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  margin-left: 114px;
+}
+
+.circle-button-left,
+.circle-button-right {
+  width: 52px;
+  height: 52px;
+  border-radius: 60px;
+  border: 1px solid #fafafa;
+  background-color: transparent;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-button-left:hover,
+.circle-button-right:hover {
+  border: 1px solid #fafafa80;
+  transition: all 0.5s;
+}
+
+.circle-button-left:disabled,
+.circle-button-right:disabled {
+  border: 1px solid #fafafa20;
+  cursor: auto;
+}
+
+.arrow-left {
+  stroke: #3b3b3b;
+  transform: rotate(180deg);
+}
+
+.arrow-right {
+  stroke: #3b3b3b;
+}
+
+.circle-button-right .arrow-right,
+.circle-button-left .arrow-left {
+  transition: all 0.5s;
+  stroke: #fafafa;
+}
+
+.circle-button-right:hover .arrow-right,
+.circle-button-left:hover .arrow-left {
+  transition: all 0.5s;
+  stroke: #fafafa80;
+}
+
+.circle-button-left:disabled .arrow-left,
+.circle-button-right:disabled .arrow-right {
+  stroke: #fafafa20;
+  cursor: auto;
 }
