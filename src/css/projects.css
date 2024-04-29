@@ -204,10 +204,7 @@
     }
 }
 
-.swiper-button-prev {
-    position: absolute;
-}
-
+.swiper-button-prev,
 .swiper-button-next {
-    position: static;
+    position: fixed;
 }
