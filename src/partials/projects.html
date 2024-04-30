@@ -3,11 +3,6 @@
     <h2 class="projects-title">Projects</h2>
     <!-- Slider main container -->
     <div class="swiper swiper-proj">
-      <div class="projects-swiper-button">
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
       <!-- Additional required wrapper -->
       <ul class="swiper-wrapper">
         <!-- Slides -->
@@ -64,7 +59,7 @@
                 />
                 <img
                   class="projects-teh-img"
-                  src="./img/projects/image 2@1x_result.png"
+                  src="./img/projects/image 2@2x_result.png"
                   alt="reading a book"
                 />
               </picture>
@@ -193,7 +188,17 @@
         </li>
       </ul>
     </div>
-    <button class="projects-btn" type="button"></button>
-    <button class="projects-btn" type="button"></button>
+    <div class="projects-btn">
+      <button class="swiper-button-prev-proj-btn" type="button">
+        <svg class="arrow-left-proj-btn arrow-left" width="24" height="24">
+          <use href="./img/icons/icon.svg#arrow-narrow-right"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next-proj-btn" type="button">
+        <svg class="arrow-right-proj-btn arrow-right"  width="24" height="24">
+          <use href="./img/icons/icon.svg#arrow-narrow-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
