@@ -1,12 +1,31 @@
+@media only screen and (min-width: 1440px) {
+  .work-together-container {
+    padding: 0 170px;
+  }
+}
+
+/* ---------work-together-tittle---------- */
+
 .work-together-img {
   border-radius: 12px;
   width: 44px;
   height: 44px;
 }
 
-.work-together-title-poz {
-  display: flex;
-  flex-direction: row;
+.work-together-pic-tit {
+  position: relative;
+}
+
+@media only screen and (min-width: 1440px) {
+  .work-together-pic-tit {
+    width: 542px;
+  }
+}
+
+.work-together-picture {
+  position: absolute;
+  top: -6px;
+  left: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -19,7 +38,6 @@
 
 .work-together-title {
   display: inline;
-  margin-bottom: 63px;
 
   font-weight: 500;
   font-size: 40px;
@@ -32,19 +50,24 @@
 @media only screen and (min-width: 768px) {
   .work-together-title {
     font-size: 64px;
-    margin-bottom: 18px;
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .work-together-title {
-    margin-bottom: 18px;
+.work-together-title-poz {
+  margin-left: 52px;
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-title-poz {
+    margin-left: 90px;
   }
 }
 
 .work-together-title-accent {
   color: #ed3b44;
 }
+
+/* ---------work-together-form---------- */
 
 @media only screen and (min-width: 768px) {
   .work-form {
@@ -53,6 +76,7 @@
 
     align-items: baseline;
 
+    margin-top: 18px;
     margin-bottom: 18px;
   }
 }
@@ -104,9 +128,13 @@
   border-color: #fafafa;
 }
 
+.work-form-email {
+  margin-top: 63px;
+}
+
 @media only screen and (min-width: 768px) {
   .work-form-email {
-   margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -147,7 +175,7 @@
 
 @media only screen and (min-width: 768px) {
   .work-form-comments {
-   margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -178,6 +206,8 @@
     height: 150px;
   }
 }
+
+/* ---------work-together-contacts---------- */
 
 .work-contacts {
   display: flex;
@@ -265,15 +295,38 @@
   border-color: #fafafa;
 }
 
-/* @media only screen and (min-width: 768px) {
-  .work-modal {
+/* ---------work-together-modal---------- */
+
+#custom-modal.work-modal {
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  width: 343px;
+  height: 276px;
+  background: #1c1d20;
+}
+
+@media only screen and (min-width: 768px) {
+  #custom-modal.work-modal {
+    padding: 64px;
     width: 492px;
     height: 246px;
   }
 }
 
-#work-modal-title {
+#custom-modal.work-modal .iziToast-body {
+  margin: 0;
+  padding: 0;
+}
+
+#custom-modal.work-modal .iziToast-text {
+  margin: 0;
+  padding: 0;
+}
+
+#custom-modal.work-modal .iziToast-title {
   margin-bottom: 16px;
+  margin-right: 0;
 
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -284,7 +337,9 @@
   color: #fafafa;
 }
 
-#work-modal-message {
+#custom-modal.work-modal .iziToast-message {
+  margin-bottom: 0;
+
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -292,4 +347,17 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
-} */
+}
+
+#custom-modal.work-modal .iziToast-progressbar {
+  height: 0;
+}
+
+#custom-modal.work-modal .iziToast-close {
+  top: 25px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  stroke: #fafafa;
+  background-size: 12px;
+}
