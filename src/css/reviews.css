@@ -4,12 +4,13 @@
   line-height: 1.9;
   letter-spacing: -0.02em;
   color: #fafafa66;
-  margin-left: 16px;
+
   margin-bottom: 32px;
 }
 
 .cards-list {
   display: flex;
+  justify-content: space-between;
   gap: 16px;
 }
 
@@ -118,6 +119,10 @@
     display: none;
 
   }
+
+
+
+    
 }
 
 @media only screen and (max-width:767px){

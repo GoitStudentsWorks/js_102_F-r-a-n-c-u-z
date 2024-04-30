@@ -21,10 +21,6 @@
   position: relative;
 }
 
-.header-container {
-  max-width: none;
-  margin: 0;
-}
 
 .header-nav {
   display: flex;
