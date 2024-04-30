@@ -13,13 +13,16 @@
   gap: 16px;
 }
 
-.cards-item {
+.cards-item-natalia,
+.cards-item-dmytro,
+.cards-item-anna,
+.cards-item-ivetta {
   width: 100%;
   max-width: 332px;
   padding: 32px 24px 32px 24px;
   border-radius: 20px;
   border: 1px solid #fafafa33;
-  margin-left: 16px;
+
 }
 
 .name {
@@ -37,12 +40,7 @@
   padding-top: 8px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 32px;
-}
+
 
 .circle-button {
   width: 52px;
@@ -56,7 +54,8 @@
   display: flex;
   gap: 12px;
   margin-top: 32px;
-  margin-left: 114px;
+  justify-content: center;
+
 }
 
 .circle-button-left,
@@ -110,3 +109,25 @@
   stroke: #fafafa20;
   cursor: auto;
 }
+
+
+@media only screen and (max-width:1439px){
+.cards-item-anna,
+  .cards-item-ivetta {
+    visibility: hidden;
+    display: none;
+
+  }
+}
+
+@media only screen and (max-width:767px){
+
+  .cards-item-anna,
+  .cards-item-ivetta,
+  .cards-item-dmytro {
+    visibility: hidden;
+    display: none;
+
+  }
+}
+
