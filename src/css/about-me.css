@@ -478,9 +478,10 @@ hr {
 
   }
 
-  .about-skills-list-div-4,
-  .about-skills-list-div-5,
-  .about-skills-list-div-6 {
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+
     visibility: hidden;
     display: none;
   }
@@ -494,10 +495,12 @@ hr {
 
   }
 
-  .about-skills-list-div-3,
-  .about-skills-list-div-4,
-  .about-skills-list-div-5,
-  .about-skills-list-div-6 {
+
+  .skill-3,
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+
     visibility: hidden;
     display: none;
   }
