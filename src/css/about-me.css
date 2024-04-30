@@ -77,7 +77,12 @@
   padding: 0 16px;
 }
 
-.about-skills-list-div {
+.about-skills-list-div-1,
+.about-skills-list-div-2,
+.about-skills-list-div-3,
+.about-skills-list-div-4,
+.about-skills-list-div-5,
+.about-skills-list-div-6 {
   border-radius: 100px;
   border: 1px solid grey;
   width: 200px;
@@ -271,7 +276,12 @@ hr {
   justify-content: center;
 }
 
-.about-skills-list-div {
+.about-skills-list-div-1,
+.about-skills-list-div-2,
+.about-skills-list-div-3,
+.about-skills-list-div-4,
+.about-skills-list-div-5,
+.about-skills-list-div-6 {
   width: 120px;
   height: 120px;
   margin-bottom: 25px;
@@ -391,7 +401,12 @@ hr {
   /* width: 680px; */
 }
 
-.about-skills-list-div {
+.about-skills-list-div-1,
+.about-skills-list-div-2,
+.about-skills-list-div-3,
+.about-skills-list-div-4,
+.about-skills-list-div-5,
+.about-skills-list-div-6 {
   width: 170px;
   height: 170px;
   margin-bottom: 25px;
@@ -466,6 +481,7 @@ hr {
   .skill-4,
   .skill-5,
   .skill-6 {
+
     visibility: hidden;
     display: none;
   }
@@ -479,10 +495,12 @@ hr {
 
   }
 
+
   .skill-3,
   .skill-4,
   .skill-5,
   .skill-6 {
+
     visibility: hidden;
     display: none;
   }
