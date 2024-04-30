@@ -6,6 +6,7 @@ const emailEl = document.querySelector('.work-form input[name=email]');
 const commentsEl = document.querySelector('.work-form input[name=comment]');
 const succesEl = document.querySelector('.work-form-succes');
 const invalidEl = document.querySelector('.work-form-invalid');
+const bodyEl = document.querySelector('body');
 
 succesEl.style.display = 'none';
 invalidEl.style.display = 'none';
@@ -55,13 +56,20 @@ formEl.addEventListener('submit', event => {
           class: 'work-modal',
           id: 'custom-modal',
           title: post.title,
+          theme: 'dark',
           message: post.message,
           position: 'center',
           timeout: false,
           overlay: true,
           close: true,
           closeOnEscape: true,
-          closeOnClick: true,
+          closeOnClick: false,
+          onOpened: () => {
+            bodyEl.style.overflow = 'hidden';
+          },
+          onClosed: () => {
+            bodyEl.style.overflow = 'scroll'
+          }
         });
         formEl.reset();
       })
@@ -70,7 +78,6 @@ formEl.addEventListener('submit', event => {
         emailEl.value = formDataEl.email;
         commentsEl.value = formDataEl.comment;
       });
-
     localStorage.removeItem(localKey);
     return;
   }
