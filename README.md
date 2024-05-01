@@ -1,4 +1,4 @@
-# JEFFERSON PORTFOLIO
+# LLOYD JEFFERSON PORTFOLIO
 
 Цей проект був створений командою розробників:
 
