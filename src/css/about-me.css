@@ -5,13 +5,17 @@
   padding: 10px;
   align-items: center;
   gap: 10px;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.about-con-list-iteam-id {
-  /* width: 600px; */
-  /* margin-left: 728px; */
-  justify-content: end;
+.about-con-list-iteam {
+  border-bottom: 1px solid #3b3b3b;
+  padding-bottom: 32px;
 }
+
+
 
 .about-con-list-iteam-title {
   color: rgba(250, 250, 250, 0.4);
@@ -22,12 +26,12 @@
 }
 
 .about-con-list-iteam-text {
-  /* width: 612px; */
-  width: 100%;
-  font-size: 16px;
+  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.32px;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: -0.02em;
+  
 }
 
 .about-con-list-iteam-text1 {
@@ -111,6 +115,7 @@ hr {
 .about-con-list-iteam-div {
   display: flex;
 }
+
 .about-conteiner-text-span {
   color: #ed3b44;
 }
@@ -119,23 +124,24 @@ hr {
   color: rgba(250, 250, 250, 0.4);
 }
 
-.about-conteiner {
+.about-conteiner-div {
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  padding: 0 16px;
+  /* padding: 0 16px; */
 }
 
 .about-conteiner-fortext {
   /* width: 333px; */
-  height: 468px;
+  /* height: 468px; */
   padding: 32px;
   /* margin-right: 16px; */
 
   border-radius: 24px;
   background: #242527;
 }
+
 .about-conteiner-text {
   font-size: 21px;
   /* width: 262px; */
@@ -151,17 +157,13 @@ hr {
   /* margin-right: 20px; */
 }
 
-.about-con {
-  display: flex;
-  justify-content: center;
-  padding: 0 16px;
-}
+
 
 .about-con-list-iteam-sec {
   /* width: 295px; */
   margin-top: 26px;
   margin-bottom: 7px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 
   display: flex;
   justify-content: space-between;
@@ -170,22 +172,15 @@ hr {
 .about-con-list-iteam-pos {
   /* width: 295px; */
   margin-top: 25px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
-.about-con-list-iteam-sec-icon {
-  display: flex;
-  padding: 7px;
-}
 
-.about-con-list-iteam-id {
-  /* width: 345px; */
-  margin-left: 28px;
-}
+
 
 .about-con-list-iteam-title {
   font-size: 12px;
-  margin-left: -24px;
+  /* margin-left: -24px; */
 }
 
 .arrow-up {
@@ -203,39 +198,30 @@ hr {
   stroke-width: 2px;
 }
 
-.about-con-list-iteam-text {
-  /* width: 312px; */
-  margin-top: 5px;
-  margin-left: -20px;
-  font-size: 12px;
-}
 
-.about-con-list-iteam-text1 {
-  /* width: 312px; */
-  margin-left: -20px;
-  font-size: 12px;
-}
+
+
 
 .about-con-list-iteam-text21 {
   /* width: 312px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 12px;
 }
 
 .about-con-list-iteam-text22 {
   /* width: 312px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 12px;
 }
 
 .about-con-list-iteam-text23 {
   /* width: 312px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 12px;
 }
 
 .about-con-list-iteam-text31 {
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 12px;
   margin-top: 10px;
 
@@ -246,14 +232,14 @@ hr {
 
 .about-con-list-iteam-text32 {
   /* width: 314px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 12px;
   padding: 0;
 }
 
 .about-con-list-iteam-text33 {
   /* width: 465px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 12px;
   width: 100%;
   margin-top: 10px;
@@ -289,22 +275,18 @@ hr {
   /* width: 635px; */
   margin-top: 26px;
   margin-bottom: 7px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .about-con-list-iteam-pos {
   /* width: 635px; */
   margin-top: 25px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 
   display: flex;
   justify-content: space-between;
 }
 
-.about-con-list-iteam-sec-icon {
-  display: flex;
-  padding: 8px;
-}
 
 .arrow-up {
   width: 12px;
@@ -316,62 +298,50 @@ hr {
   height: 12px;
 }
 
-.about-con-list-iteam-id {
-  /* width: 645px; */
-  margin-left: 28px;
-}
+
 
 .about-con-list-iteam-title {
   font-size: 16px;
-  margin-left: -24px;
+  /* margin-left: -24px; */
 }
 
-.about-con-list-iteam-text {
-  /* width: 650px; */
-  margin-top: 5px;
-  margin-left: -20px;
-  font-size: 14px;
-}
 
-.about-con-list-iteam-text1 {
-  /* width: 650px; */
-  margin-left: -20px;
-  font-size: 14px;
-}
+
+
 
 .about-con-list-iteam-text21 {
   /* width: 650px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 14px;
 }
 
 .about-con-list-iteam-text22 {
   /* width: 650px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 14px;
 }
 
 .about-con-list-iteam-text23 {
   /* width: 650px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 14px;
 }
 
 .about-con-list-iteam-text31 {
   /* width: 645px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 14px;
 }
 
 .about-con-list-iteam-text32 {
   /* width: 650px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 14px;
 }
 
 .about-con-list-iteam-text33 {
   /* width: 650px; */
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-size: 14px;
 }
 
@@ -409,14 +379,15 @@ hr {
 /* ------------------------------------- */
 
 @media only screen and (min-width: 769px) {
-  .about-conteiner-fortext {
+  /* .about-conteiner-fortext {
     height: 700px;
-  }
+  } */
 
   .about-conteiner-text {
     font-size: 38px;
     width: 100%;
   }
+
   .about-conteiner-fortext {
     padding: 64px;
   }
@@ -432,8 +403,17 @@ hr {
   }
 }
 
+.about-con-list-iteam-id{
+width: 343px;
+}
+@media only screen and (min-width: 768px) {
+  .about-con-list-iteam-id {
+    width: 704px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
-  .about-conteiner {
+  .about-conteiner-div {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -443,11 +423,50 @@ hr {
     width: 50%;
     min-height: 700px;
   }
+
   .about-conteiner-img {
     width: 50%;
   }
 
-  .about-con-list-iteam-id {
-    margin-left: 692px;
+  .about-con-list-iteam-id{
+    margin-left: 688px;
   }
+}
+ 
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+  .about-conteiner-fortext {
+
+    height: 700px;
+
+  }
+
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+
+    visibility: hidden;
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .about-conteiner-fortext {
+
+    height: 500px;
+
+  }
+
+
+  .skill-3,
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+
+    visibility: hidden;
+    display: none;
+  }
+
+
 }

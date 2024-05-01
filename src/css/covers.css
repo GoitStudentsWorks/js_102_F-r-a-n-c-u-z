@@ -71,19 +71,31 @@
         background-image: url(../img/covers/elements-mobile-tablet@1x_result.webp);
         background-image: url(../img/covers/elements-mobile-tablet@1x_result.png);
     }
+
+    .CoversImgContainer {
+        width: 544px;
+        height: 314px;
+    }
 }
+
 
 @media only screen and (min-width:769px) and (min-resolution:192dpi) {
     .CoverBgContainer {
         background-image: url(../img/covers/elements-mobile-tablet@2x_result.webp);
         background-image: url(../img/covers/elements-mobile-tablet@2x_result.png);
     }
+
+    .CoversImgContainer {
+        width: 544px;
+         height: 314px;
+        }
 }
 
 @media only screen and (min-width:1280px) {
     .CoverBgContainer {
         background-image: url(../img/covers/elements_vectors@1x_result_result.webp);
         background-image: url(../img/covers/elements_vectors@1x_result.png);
+
         height: 960px;
     }
 
@@ -98,7 +110,13 @@
 
     .CoversProjectList {
         gap:45px;
+
     }
+
+        .CoversImgContainer {
+            width: 544px;
+            height: 314px;
+        }
 }
 
 @media only screen and (min-width:1280px) and (min-resolution:192dpi) {
@@ -137,7 +155,12 @@
     }
     .CoversProjectList {
         gap: 45px;
+
     }
+        .CoversImgContainer {
+            width: 544px;
+            height: 314px;
+        }
 }
 
 @media only screen and (min-width:1440px) and (min-resolution:192dpi) {
