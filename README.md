@@ -1,5 +1,7 @@
 # JEFFERSON PORTFOLIO
 
+---
+
 Цей проект був створений командою розробників:
 
 1. **Header/Hero** - Chekrenov Oleksandr / Olenka Vyshnevska
