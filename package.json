@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Projectus-06/",
+    "build": "vite build --base=/js_102_F-r-a-n-c-u-z/",
     "preview": "vite preview"
   },
   "devDependencies": {
