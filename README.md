@@ -11,6 +11,6 @@
 7. **Reviews** - Petrenko Ivanna
 8. **Work together** - Tkachenko Anna
 
-Під керівництвом **Team-lead/developer** - Dobie Nikita.
-
+Під керівництвом **Team-lead/developer** - Dobie Nikita
+Та **Scrum Master** - Olenka Vyshnevska
 ---
