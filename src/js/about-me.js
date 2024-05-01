@@ -3,8 +3,13 @@ accordions.forEach(accordion => {
   new Accordion(accordion);
 });
 
+
+const accordionItems = document.querySelectorAll('.about-con-list-iteam'); 
+
+  
+
 document.addEventListener('DOMContentLoaded', function () {
-  const accordionItems = document.querySelectorAll('.about-con-list-iteam');
+  
 
   function toggleAccordion() {
     this.classList.toggle('active');
@@ -15,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const arrow = this.querySelector('.arrow-up');
     arrow.classList.toggle('arrow-down');
-    arrow.style.transition = `transform 250ms cubic-bezier(0.4, 0, 0.2, 1)`;
   }
 
   accordionItems.forEach(item => {
@@ -28,32 +32,96 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+  
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+// Swipe
+ const arrow = document.querySelector('.about-skills-list');
+ const skills = document.querySelectorAll('.about-skills-list-div');
+ const swipeAbout = document.querySelector('.swipers');
+let contAbout = document.querySelector('.about-container.container');
+let iEl = skills.length;
+ 
+let windowWidth = contAbout.clientWidth;
+initSwipe();
 
-// Ініціалізуємо Swiper для підсвічування
-const swiper = new Swiper('.swiper-container', {
-  modules: [Navigation],
-  direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  on: {
-    slideChange: function () {
-      // Отримуємо всі слайди
-      const slides = document.querySelectorAll('.about-skills-list-div');
-      // Змінюємо колір фону на початковий для всіх слайдів
-      slides.forEach(slide => {
-        slide.style.backgroundColor = '';
-      });
-      // Отримуємо поточний активний слайд та підсвічуємо його червоним
-      const activeSlide = slides[this.activeIndex];
-      activeSlide.style.backgroundColor = '#ed3b44';
-    },
-  },
-});
+
+window.addEventListener('resize', () => {
+  contAbout = document.querySelector('.about-container.container');
+  if (contAbout.clientWidth !== windowWidth) {
+    windowWidth = contAbout.clientWidth;
+    initSwipe();
+  }
+}
+)
+
+
+function initSwipe() {
+ 
+  if (contAbout.clientWidth <= 767) { iEl = 2 };
+  if (contAbout.clientWidth > 767 && contAbout.clientWidth <= 1439) { iEl = 3 };
+  if (contAbout.clientWidth >= 1440) { iEl = skills.length; };
+  
+  for (let i = 0; i < iEl; i++) {
+        skills[i].style.display = 'block';
+      };
+  for (let i = iEl; i < skills.length; i++) {
+    skills[i].style.display = 'none';
+  }
+
+  let currentIndex = 0;
+ 
+  skills[currentIndex].style.backgroundColor = '#ed3b44';
+
+  arrow.addEventListener('click', () => {
+    skills[currentIndex].style.backgroundColor = 'transparent';
+    currentIndex = (currentIndex + 1) % skills.length;
+    console.log(currentIndex)
+    console.log((currentIndex + 1) % skills.length)
+    skills[currentIndex].style.backgroundColor = '#ed3b44';
+    skills[currentIndex].style.display = 'block';
+    if (currentIndex === 0 || currentIndex === 1) {
+      for (let i = iEl; i < skills.length; i++) {
+        skills[i].style.display = 'none';
+      };
+
+      for (let i = 0; i < iEl; i++) {
+        skills[i].style.display = 'block';
+      };
+    }
+    skills[currentIndex - iEl].style.display = 'none';
+    if (currentIndex === 0 || currentIndex === 1) {
+      for (let i = iEl; i < skills.length; i++) {
+        skills[i].style.display = 'none';
+      };
+    }
+   
+    else { skills[currentIndex - iEl].style.display = 'none'; }
+  });
+ 
+
+  swipeAbout.addEventListener('click', () => {
+    skills[currentIndex].style.backgroundColor = 'transparent';
+    currentIndex = (currentIndex + 1) % skills.length;
+    skills[currentIndex].style.backgroundColor = '#ed3b44';
+    skills[currentIndex].style.display = 'block';
+    if (currentIndex === 0 || currentIndex === 1) {
+      for (let i = iEl; i < skills.length; i++) {
+        skills[i].style.display = 'none';
+      };
+
+      for (let i = 0; i < iEl; i++) {
+        skills[i].style.display = 'block';
+      };
+    }
+    skills[currentIndex - iEl].style.display = 'none';
+    if (currentIndex === 0 || currentIndex === 1) {
+      for (let i = iEl; i < skills.length; i++) {
+        skills[i].style.display = 'none';
+      };
+    }
+   
+    else { skills[currentIndex - iEl].style.display = 'none'; }
+  });
+  
+  
+} 
