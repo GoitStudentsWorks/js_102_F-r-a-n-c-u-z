@@ -111,6 +111,7 @@ hr {
 .about-con-list-iteam-div {
   display: flex;
 }
+
 .about-conteiner-text-span {
   color: #ed3b44;
 }
@@ -129,13 +130,14 @@ hr {
 
 .about-conteiner-fortext {
   /* width: 333px; */
-  height: 468px;
+  /* height: 468px; */
   padding: 32px;
   /* margin-right: 16px; */
 
   border-radius: 24px;
   background: #242527;
 }
+
 .about-conteiner-text {
   font-size: 21px;
   /* width: 262px; */
@@ -409,14 +411,15 @@ hr {
 /* ------------------------------------- */
 
 @media only screen and (min-width: 769px) {
-  .about-conteiner-fortext {
+  /* .about-conteiner-fortext {
     height: 700px;
-  }
+  } */
 
   .about-conteiner-text {
     font-size: 38px;
     width: 100%;
   }
+
   .about-conteiner-fortext {
     padding: 64px;
   }
@@ -443,6 +446,7 @@ hr {
     width: 50%;
     min-height: 700px;
   }
+
   .about-conteiner-img {
     width: 50%;
   }
@@ -450,4 +454,41 @@ hr {
   .about-con-list-iteam-id {
     margin-left: 692px;
   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+  .about-conteiner-fortext {
+
+    height: 700px;
+
+  }
+
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+
+    visibility: hidden;
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .about-conteiner-fortext {
+
+    height: 500px;
+
+  }
+
+
+  .skill-3,
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+
+    visibility: hidden;
+    display: none;
+  }
+
+
 }
