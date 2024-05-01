@@ -1,5 +1,5 @@
-<h1>**JEFFERSON PORTFOLIO**</h1>
-***
+<h1>JEFFERSON PORTFOLIO</h1>
+
 Цей проект був створений командою розробників:
 
 1. **Header/Hero** - Chekrenov Oleksandr / Olenka Vyshnevska
