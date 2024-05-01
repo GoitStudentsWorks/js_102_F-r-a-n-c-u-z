@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 1; i < faqAccord.length; i++) {
     const content = faqAccord[i].querySelector('.faq-ac-panel');
     content.style.display = 'none';
+    content.style.transition = `transform 500ms cubic-bezier(0.4, 0, 0.2, 1)`;
     }
     
      faqAccord.forEach(el => {
@@ -33,10 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             else {
     content.style.display = 'block';
     icon.style.transform = 'rotate(0.5turn)';
+    icon.style.transition = `transform 500ms cubic-bezier(0.4, 0, 0.2, 1)`;
 }
   }
-
- 
-
- 
 });

@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const arrow = this.querySelector('.arrow-up');
     arrow.classList.toggle('arrow-down');
+    arrow.style.transition = `transform 250ms cubic-bezier(0.4, 0, 0.2, 1)`;
   }
 
   accordionItems.forEach(item => {
