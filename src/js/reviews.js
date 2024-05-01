@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 const lButton = document.querySelector('.swiper-button-next-rev-btn');
 const rButton = document.querySelector('.swiper-button-prev-rev-btn');
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
+const listEl = document.querySelector('.cards-list')
 
 fetch(BASE_URL)
   .then(response => {
@@ -17,13 +18,30 @@ fetch(BASE_URL)
     }
     return response.json();
   })
-  .then(post => console.log(post))
+  .then(posts => {
+    listEl.innerHTML = posts.map(post => `
+    <li class="swiper-slide swiper-slide-rev cards-item-natalia">
+            <img
+              src=${post.avatar_url}
+              alt="student"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          <div class="info">
+            <h3 class="name">${post.author}</h3>
+            <p class="text">
+              ${post.review}
+            </p>
+          </div>
+        </li>
+    `).join('');
+  })
   .catch(error => console.log(error));
 
 const swiper = new Swiper('.swiper-reviews', {
   modules: [Navigation],
   direction: 'horizontal',
-  loop: true,
   centeredSlides: false,
   slidesPerView: 4,
   navigation: {
@@ -34,17 +52,17 @@ const swiper = new Swiper('.swiper-reviews', {
     resize: function () {
       const windowWidth = window.innerWidth;
       if (windowWidth <= 768) {
-        swiper.params.slidesPerView = 1;
+        this.params.slidesPerView = 1;
       } else if (windowWidth <= 1440) {
-        swiper.params.slidesPerView = 2;
+        this.params.slidesPerView = 2;
       } else {
-        swiper.params.slidesPerView = 4;
+        this.params.slidesPerView = 4;
       }
-      swiper.update();
+      this.update();
     },
     slideChangeTransitionEnd: function () {
-      const beginning = swiper.isBeginning;
-      const end = swiper.isEnd;
+      const beginning = this.isBeginning;
+      const end = this.isEnd;
       if (beginning) {
         rButton.disabled = true;
       } else {
@@ -60,43 +78,3 @@ const swiper = new Swiper('.swiper-reviews', {
 });
 
 rButton.disabled = true;
-
-// 'use strict';
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const Swiper = new Swiper('.cards-list', {
-//     keyboard: {
-//       enabled: true,
-//       onlyInViewport: false,
-//     },
-//     direction: 'horizontal',
-//     slidesPerView: 1,
-//     spaceBetween: 16,
-//     navigation: {
-//       nextEl: '.rewiews-button-next',
-//       prevEl: '.rewiews-button-prev',
-//     },
-//     breakpoints: {
-//       768: {
-//         slidesPerView: 2,
-//         spaceBetween: 16,
-//       },
-//       1440: {
-//         slidesPerView: 4,
-//         spaceBetween: 16,
-//       },
-//     },
-//   });
-
-//   document
-//     .querySelector('.rewiews-button-prev')
-//     .addEventListener('click', function () {
-//       mySwiper.slidePrev();
-//     });
-
-//   document
-//     .querySelector('.rewiews-button-next')
-//     .addEventListener('click', function () {
-//       mySwiper.slideNext();
-//     });
-// });

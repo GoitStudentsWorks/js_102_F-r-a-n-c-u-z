@@ -21,8 +21,8 @@ const swiper = new Swiper('.swiper-proj', {
   },
   on: {
     slideChangeTransitionEnd: function () {
-        const isBeginning = swiper.isBeginning;
-        const isEnd = swiper.isEnd;
+        const isBeginning = this.isBeginning;
+        const isEnd = this.isEnd;
 
         // Если текущий слайд - первый, отключаем правую кнопку
         if (isBeginning) {
