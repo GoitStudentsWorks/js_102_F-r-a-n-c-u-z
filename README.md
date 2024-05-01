@@ -1,4 +1,4 @@
-<h1>JEFFERSON PORTFOLIO</h1>
+# JEFFERSON PORTFOLIO
 
 Цей проект був створений командою розробників:
 
@@ -11,6 +11,7 @@
 7. **Reviews** - Petrenko Ivanna
 8. **Work together** - Tkachenko Anna
 
+---
+
 Під керівництвом __Team-lead/developer__ - Dobie Nikita
 <br>Та __Scrum Master__ - Olenka Vyshnevska</br>
----
