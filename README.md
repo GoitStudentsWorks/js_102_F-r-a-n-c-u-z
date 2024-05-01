@@ -12,5 +12,5 @@
 8. **Work together** - Tkachenko Anna
 
 Під керівництвом **Team-lead/developer** - Dobie Nikita
-Та **Scrum Master** - Olenka Vyshnevska
+<br>Та **Scrum Master** - Olenka Vyshnevska</br>
 ---
