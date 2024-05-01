@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+.swiper-slide-rev {
+  height: 332px;
+}
+
 /* ---------slide----------- */
 
 .reviews-tittle {
@@ -16,7 +20,6 @@
 }
 
 .cards-list {
-
   gap: 12px;
 }
 
