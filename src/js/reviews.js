@@ -37,7 +37,10 @@ fetch(BASE_URL)
         </li>
     `).join('');
   })
-  .catch(error => console.log(error));
+  .catch(error => {
+    console.log(error);
+    listEl.innerHTML = `<li><span>Not found</span></li>`;
+  });
 
 const swiper = new Swiper('.swiper-reviews', {
   modules: [Navigation],
